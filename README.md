@@ -8,6 +8,7 @@ Huddwin Almeida
 February 2026
 
 The assignment is to build a mockup of the ReceiptHog app containing 4 accessible pages in the Tab Menu, as well as the profile page accessible in the Home Page showcasing a stack navigation.
+The rewards page has an onPress feature for the dropdown arrows as well.
 
 These are the sample pages that we worked on.
 
