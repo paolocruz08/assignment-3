@@ -9,7 +9,7 @@ February 2026
 
 The assignment is to build a mockup of the ReceiptHog app containing 4 accessible pages in the Tab Menu, as well as the profile page accessible in the Home Page showcasing a stack navigation.
 
-This is the sample page.
+These are the sample pages that we worked on.
 
 <img width="200" height="500" alt="Image" src="https://github.com/user-attachments/assets/8d0ec0fd-d14f-4043-8661-35440569f5fb" />
 <img width="200" height="500" alt="Image" src="https://github.com/user-attachments/assets/8099e495-e952-43d9-8a2d-ab78e9b29dae" />
