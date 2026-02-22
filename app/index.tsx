@@ -1,12 +1,12 @@
 import { useRouter } from "expo-router";
 import React from "react";
 import {
+  Platform,
+  Pressable,
   ScrollView,
   StyleSheet,
   Text,
   View,
-  Pressable,
-  Platform,
 } from "react-native";
 
 export default function Index() {
@@ -56,7 +56,7 @@ export default function Index() {
       <View style={styles.row}>
         <Pressable
           style={[styles.card, styles.smallCard]}
-          onPress={() => router.push("/rewards")}
+          onPress={() => router.push("/link")}
         >
           <Text style={styles.smallIcon}>🛒</Text>
           <Text style={styles.smallTitle}>Link Amazon,{"\n"}earn more!</Text>
@@ -64,7 +64,7 @@ export default function Index() {
 
         <Pressable
           style={[styles.card, styles.smallCard]}
-          onPress={() => router.push("/receipts")}
+          onPress={() => router.push("/receipt")}
         >
           <Text style={styles.smallIcon}>✉️</Text>
           <Text style={styles.smallTitle}>Upload e-receipts{"\n"}for rewards</Text>
@@ -107,7 +107,7 @@ export default function Index() {
       <Text style={styles.sectionTitle}>e-Receipts</Text>
       <Pressable
         style={[styles.card, styles.wideCard]}
-        onPress={() => router.push("/receipts")}
+        onPress={() => router.push("/receipt")}
       >
         <View>
           <Text style={styles.wideTitle}>Upload Online Receipts</Text>
