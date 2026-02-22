@@ -1,12 +1,12 @@
 import { useRouter } from "expo-router";
 import React from "react";
 import {
-  Platform,
-  Pressable,
   ScrollView,
   StyleSheet,
   Text,
   View,
+  Pressable,
+  Platform,
 } from "react-native";
 
 export default function Index() {
@@ -67,7 +67,9 @@ export default function Index() {
           onPress={() => router.push("/receipt")}
         >
           <Text style={styles.smallIcon}>✉️</Text>
-          <Text style={styles.smallTitle}>Upload e-receipts{"\n"}for rewards</Text>
+          <Text style={styles.smallTitle}>
+            Upload e-receipts{"\n"}for rewards
+          </Text>
         </Pressable>
       </View>
 
@@ -94,7 +96,9 @@ export default function Index() {
           style={[styles.card, styles.bonusCard]}
           onPress={() => router.push("/rewards")}
         >
-          <Text style={styles.bonusTitle}>Earn achievements and{"\n"}bonus rewards</Text>
+          <Text style={styles.bonusTitle}>
+            Earn achievements and{"\n"}bonus rewards
+          </Text>
           <Text style={styles.bonusSub}>Just by using Receipt Hog!</Text>
 
           <View style={[styles.bonusFooter, { marginTop: 16 }]}>

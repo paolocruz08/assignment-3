@@ -1,5 +1,6 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { useRouter } from "expo-router";
 
 export default function Link() {
   return (
@@ -27,7 +28,8 @@ export default function Link() {
       </View>
 
       <Text style={styles.description}>
-        Never miss a receipt! Earn rewards easily for every receipt when you link your accounts below.
+        Never miss a receipt! Earn rewards easily for every receipt when you
+        link your accounts below.
       </Text>
 
       <View style={styles.sectionHeader}>
@@ -36,7 +38,6 @@ export default function Link() {
       </View>
 
       <ScrollView>
-
         <View style={styles.storeRow}>
           <View style={styles.storeIcon}>
             <Ionicons name="logo-amazon" size={22} color="#2196F3" />

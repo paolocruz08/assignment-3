@@ -4,7 +4,6 @@ import { ScrollView, StyleSheet, Text, View } from "react-native";
 export default function Receipt() {
   return (
     <View style={styles.container}>
-
       <View style={styles.header}>
         <View>
           <Text style={styles.headerSide}>Hide</Text>
@@ -15,10 +14,11 @@ export default function Receipt() {
         </View>
       </View>
 
-      <ScrollView style={styles.scroll} contentContainerStyle={styles.scrollContent}>
-
+      <ScrollView
+        style={styles.scroll}
+        contentContainerStyle={styles.scrollContent}
+      >
         <View style={styles.weekSection}>
-
           <Text style={styles.weekTitle}>Feb 15 - Feb 21</Text>
 
           <View style={styles.progressRow}>
@@ -30,7 +30,9 @@ export default function Receipt() {
             </View>
           </View>
 
-          <Text style={styles.progressLabel}>0/100 coins earned this week from paper receipts</Text>
+          <Text style={styles.progressLabel}>
+            0/100 coins earned this week from paper receipts
+          </Text>
 
           <View style={styles.searchRow}>
             <View style={styles.iconButton}>
@@ -44,7 +46,6 @@ export default function Receipt() {
               <Text style={styles.searchText}>Search Receipts</Text>
             </View>
           </View>
-
         </View>
 
         <View style={styles.emailBanner}>
@@ -81,19 +82,17 @@ export default function Receipt() {
           <View style={styles.endCardIcon}>
             <Ionicons name="receipt-outline" size={28} color="#fff" />
           </View>
-          
+
           <Text style={styles.endCardText}>
             You have reached the end of your receipt list.{" "}
             <Text style={styles.backToTop}>Back to Top</Text>
           </Text>
         </View>
-
       </ScrollView>
 
       <View style={styles.camera}>
         <Ionicons name="camera" size={26} color="#fff" />
       </View>
-
     </View>
   );
 }
